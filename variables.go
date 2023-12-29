@@ -28,8 +28,10 @@ func Variables() {
 
 func float() {
 	penny := 2.0
+	const money = 55
 	//this will print the datatype of the variable
 	fmt.Printf("Data type is %T\n",penny)
+	fmt.Println(money)
 }
 
 func multi_variables(){
@@ -48,7 +50,8 @@ func conversion() {
 }
 func main() {
 	//Variables();
-	//float()
+	float()
 	//multi_variables()
-	conversion()
+	//conversion()
 }
+ 
