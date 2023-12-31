@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-
 // Go does not allow any unused variables
 // In Go we can return multiple values from a function
 /*
@@ -29,6 +28,32 @@ func concat( s1 string , s2 string)  string  {
 	this will work same as above
 */
 
+// how to write structs??
+
+type person struct {
+	name string
+	age int
+	color string
+	gender string
+}
+
+
+//how to make nested structs
+
+
+type student struct {
+	name string
+	age int
+	color string
+	school_name school
+	roll_no school
+}
+type school struct {
+	std int
+	section string
+}
+
+
 
 func increment(x int) int{
 	x++
@@ -37,6 +62,9 @@ func increment(x int) int{
 
 func main(){
 	//fmt.Println("Ritik","Agarwal")
+	// we can access data using fot (.) operator
+	stud := student {}
+	stud.school_name.std = 10
 
 	x := 5
 	x =increment(x)
